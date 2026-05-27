@@ -1,0 +1,13 @@
+.DS_Store
+*.key
+.obsidian/
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.local
+.venv/
+dist/
+build/
+.idea/
+.vscode/
