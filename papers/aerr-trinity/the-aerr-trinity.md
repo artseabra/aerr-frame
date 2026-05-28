@@ -1,12 +1,12 @@
 # The Ærr Trinity
 
-## A Three-Order Framework for the Cost of Inquiry
+## A Cost-of-Inquiry Law at Three Orders
 
 **Art Seabra**  
 **Ifthis Research**  
 Philadelphia, PA  
 
-**Status:** Preprint / working paper v0.3  
+**Status:** Preprint / working paper v0.4  
 **Date:** 2026-05-27  
 **DOI:** [10.5281/zenodo.TBD](https://doi.org/10.5281/zenodo.TBD)  
 **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
@@ -774,10 +774,10 @@ BibTeX:
 ```bibtex
 @misc{seabra2026aerr,
   author       = {Seabra, Art},
-  title        = {The {{\AE}}rr Trinity: A Three-Order Framework for the Cost of Inquiry},
+  title        = {The {{\AE}}rr Trinity: A Cost-of-Inquiry Law at Three Orders},
   year         = {2026},
   month        = may,
-  version      = {v0.3},
+  version      = {v0.4},
   doi          = {10.5281/zenodo.TBD},
   url          = {https://github.com/artseabra/aerr-frame/blob/main/papers/aerr-trinity/the-aerr-trinity.md},
   note         = {Preprint}
@@ -786,7 +786,7 @@ BibTeX:
 
 Plain text:
 
-> Seabra, A. (2026). *The Ærr Trinity: A Three-Order Framework for the Cost of Inquiry* (v0.3) [Preprint]. Ifthis Research. https://github.com/artseabra/aerr-frame.
+> Seabra, A. (2026). *The Ærr Trinity: A Cost-of-Inquiry Law at Three Orders* (v0.4) [Preprint]. Ifthis Research. https://github.com/artseabra/aerr-frame.
 
 ---
 

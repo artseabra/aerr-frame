@@ -1,12 +1,12 @@
 # The Ærr Trinity
 
-A Three-Order Framework for the Cost of Inquiry
+A Cost-of-Inquiry Law at Three Orders
 
 | Field | Value |
 |---|---|
 | Author | Art Seabra · Ifthis Research |
 | Date | 2026-05-27 |
-| Version | v0.3 (preprint) |
+| Version | v0.4 (preprint) |
 | License | [CC BY 4.0](../../LICENSE) |
 | DOI | 10.5281/zenodo.TBD |
 

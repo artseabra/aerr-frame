@@ -32,11 +32,15 @@ Constructive instances of the Surrogate Existence Postulate across behavioral, e
 
 [github.com/artseabra/ic-cs](https://github.com/artseabra/ic-cs) is the historical mirror that carried IC|CS before the rename. Old links remain live; the canon lives here.
 
+## Also published at
+
+- Academia.edu — *URL pending; will be added when the public page is stable.*
+
 ## Citation
 
 See [CITATION.cff](CITATION.cff) for machine-readable citation metadata. Quick form:
 
-> Seabra, A. (2026). *The Ærr Trinity: A Three-Order Framework for the Cost of Inquiry* (v0.3) [Preprint]. Ifthis Research. https://github.com/artseabra/aerr-frame.
+> Seabra, A. (2026). *The Ærr Trinity: A Cost-of-Inquiry Law at Three Orders* (v0.4) [Preprint]. Ifthis Research. https://github.com/artseabra/aerr-frame.
 
 ## License
 
