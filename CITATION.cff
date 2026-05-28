@@ -21,4 +21,4 @@ preferred-citation:
   month: 5
   url: "https://github.com/artseabra/aerr-frame/blob/main/papers/aerr-trinity/the-aerr-trinity.md"
   doi: "10.5281/zenodo.TBD"
-  notes: "Preprint, version v0.4"
+  notes: "Preprint, version v0.4. ASCII fallback title for platforms that mangle Æ: 'The Aerr Trinity: A Cost-of-Inquiry Law at Three Orders' (no terminal period)."

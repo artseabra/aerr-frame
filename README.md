@@ -42,6 +42,8 @@ See [CITATION.cff](CITATION.cff) for machine-readable citation metadata. Quick f
 
 > Seabra, A. (2026). *The Ærr Trinity: A Cost-of-Inquiry Law at Three Orders* (v0.4) [Preprint]. Ifthis Research. https://github.com/artseabra/aerr-frame.
 
+ASCII fallback (for platforms that mangle Æ): *The Aerr Trinity: A Cost-of-Inquiry Law at Three Orders*
+
 ## License
 
 - Papers: [CC BY 4.0](LICENSE)
