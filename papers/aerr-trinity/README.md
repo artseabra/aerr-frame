@@ -1,5 +1,7 @@
 # The Ærr Trinity
 
+Reviewed: 2026-07-08
+
 A Cost-of-Inquiry Law at Three Orders
 
 | Field | Value |

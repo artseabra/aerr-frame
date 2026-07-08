@@ -1,15 +1,24 @@
-# Ærr Frame
+# ÆrrFrame
 
 Reviewed: 2026-07-08
 Status: canonical public research home
-Lineage: renamed from IC⏐CS to Ærr Frame on 2026-05-18
-ASCII fallback: Aerr Frame
+Lineage: renamed from IC⏐CS to ÆrrFrame on 2026-05-18
+ASCII fallback: AerrFrame
 
-Ærr Frame is Art Seabra's research program for the cost of inquiry across biological and synthetic systems.
+ÆrrFrame is Art Seabra's public research frame for the cost of inquiry across biological and synthetic systems.
 
 It names a recurring failure mode: a system accepts a cheaper local substitute for a globally satisfying answer while its local checks stay green. The frame tracks three public measurements of that failure: a **floor** for the cost a genuine answer must pay, a **discipline** for how often that floor is paid, and a **drift** for how fast surrogates accumulate when it is not.
 
-This repository is the public source for the papers, empirical instances, and citation metadata. Internal instruments and private vault material are not required to read, cite, or inspect the public work here.
+This repository is the canonical **ÆrrResearch** entry: papers, empirical instances, and citation metadata. Internal instruments and private vault material are not required to read, cite, or inspect the public work here.
+
+## Public System Position
+
+| Surface | Role |
+|---|---|
+| **ÆrrFrame** | Organizing principle for inquiry cost, observation limits, and surrogate buildup. |
+| **ÆrrResearch** | Papers and evidence-bound public research produced inside ÆrrFrame. |
+| **ÆrrLedger** | Separate software/provenance layer; public references should point to its own public surfaces when available. |
+| **ÆrrMemory / ÆrrConsole** | Separate memory and instrument layers; not required to read this repository. |
 
 ## Papers
 
@@ -21,7 +30,7 @@ In lineage order:
 | 2 | [The Chaos Nexus of Self](papers/ic-cs/the-chaos-nexus-of-self/) | 2026 | `papers/ic-cs/` |
 | 3 | [The Ærr Trinity](papers/aerr-trinity/) | 2026, v0.4 | `papers/aerr-trinity/` |
 
-The IC⏐CS atom remains addressable under [`papers/ic-cs/`](papers/ic-cs/). It is preserved as one atom inside the broader Ærr Frame umbrella.
+The IC⏐CS atom remains addressable under [`papers/ic-cs/`](papers/ic-cs/). It is preserved as one atom inside the broader ÆrrFrame umbrella.
 
 ## Empirical instances
 

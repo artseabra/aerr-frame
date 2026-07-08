@@ -23,7 +23,7 @@ The shared object is the surrogate stratum: the space of outputs that pay less t
 
 The result is a qualitative-first but formally scoped framework for evaluating how systems produce convincing local success while failing global satisfaction. The paper does not claim universal empirical verification. It provides the canonical methodology and marks the remaining operationalization of demand complexity, production cost, and domain-specific cost floors as forward work.
 
-**Keywords:** cost of inquiry, AI alignment, Goodhart, chain-of-thought faithfulness, activation steering, mechanistic interpretability, epistemic validity, surrogate outputs, local satisfaction, demand complexity, Ærr Frame
+**Keywords:** cost of inquiry, AI alignment, Goodhart, chain-of-thought faithfulness, activation steering, mechanistic interpretability, epistemic validity, surrogate outputs, local satisfaction, demand complexity, ÆrrFrame
 
 ---
 
@@ -629,7 +629,7 @@ This is the hinge between framework and experiment. Smoothness constraints on $f
 
 ## 10. Empirical convergence
 
-This paper treats external work as convergence, not verification. The cited papers do not prove the Ærr Frame. They instantiate neighboring mechanisms under different names.
+This paper treats external work as convergence, not verification. The cited papers do not prove the ÆrrFrame. They instantiate neighboring mechanisms under different names.
 
 | Work | Relevance |
 |---|---|
@@ -665,9 +665,9 @@ The distinctive content is the coupling of demand complexity to answer cost, the
 
 ---
 
-## 12. Position in the Ærr Frame
+## 12. Position in the ÆrrFrame
 
-The Trinity is the formal core of the Ærr Frame, but not the whole frame.
+The Trinity is the formal core of the ÆrrFrame, but not the whole frame.
 
 | Concept | Role | Relation to the Trinity |
 |---|---|---|

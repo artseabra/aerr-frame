@@ -1,6 +1,8 @@
 # Tools
 
-The operational toolkit for the Ærr Frame lives in a separate private repository:
+Reviewed: 2026-07-08
+
+The operational toolkit for the ÆrrFrame lives in a separate private repository:
 
 → **Ærr Sensor** — internal MCP server measuring κ, Ærr Rate, and Chain Drift.
 
