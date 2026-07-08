@@ -26,11 +26,11 @@ Constructive instances of the Surrogate Existence Postulate across behavioral, e
 
 ## Operational toolkit
 
-[**Ærr Sensor**](https://github.com/artseabra/aerr-sensor) — MCP server measuring κ, Ærr Rate, and Chain Drift on real systems. v0.1 ships the keystone formulae from the Trinity paper: `measure_kappa`, `aerr_rate`, `chain_drift`, `compute_floor`, `convergence_watch`.
+**Ærr Sensor** — private/internal MCP server measuring κ, Ærr Rate, and Chain Drift on real systems. v0.1 ships the keystone formulae from the Trinity paper: `measure_kappa`, `aerr_rate`, `chain_drift`, `compute_floor`, `convergence_watch`.
 
 ## Historical mirror
 
-[github.com/artseabra/ic-cs](https://github.com/artseabra/ic-cs) is the historical mirror that carried IC|CS before the rename. Old links remain live; the canon lives here.
+[github.com/artseabra/ic-cs](https://github.com/artseabra/ic-cs) is the archived redirect that carried IC|CS before the rename. Old links remain live; the canon lives here under [`papers/ic-cs/`](papers/ic-cs/).
 
 ## Also published at
 

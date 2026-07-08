@@ -13,4 +13,4 @@ The Ærr Trinity (the third paper) consolidates the Interrogation Cost Law, the 
 
 ## Historical mirror
 
-The original public mirror of IC|CS remains live at [github.com/artseabra/ic-cs](https://github.com/artseabra/ic-cs). The canon now lives here under the Ærr Frame umbrella; the historical mirror is preserved so existing inbound links continue to resolve.
+The original public mirror of IC|CS remains live as an archived redirect at [github.com/artseabra/ic-cs](https://github.com/artseabra/ic-cs). The canon now lives here under the Ærr Frame umbrella; the historical mirror is preserved so existing inbound links continue to resolve.

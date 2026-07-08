@@ -11,7 +11,7 @@ Philadelphia, PA
 **DOI:** [10.5281/zenodo.TBD](https://doi.org/10.5281/zenodo.TBD)  
 **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
 **Canonical repo:** [github.com/artseabra/aerr-frame](https://github.com/artseabra/aerr-frame)  
-**Historical mirror:** [github.com/artseabra/ic-cs](https://github.com/artseabra/ic-cs)  
+**Archived IC|CS redirect:** [github.com/artseabra/ic-cs](https://github.com/artseabra/ic-cs)  
 
 ---
 
@@ -793,4 +793,3 @@ Plain text:
 ## License
 
 This paper is released under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You may share and adapt the material with attribution.
-
