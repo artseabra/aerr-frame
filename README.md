@@ -1,8 +1,15 @@
 # Ærr Frame
 
-A framework for the cost of inquiry across biological and synthetic systems. Renamed from IC|CS on 2026-05-18.
+Reviewed: 2026-07-08
+Status: canonical public research home
+Lineage: renamed from IC⏐CS to Ærr Frame on 2026-05-18
+ASCII fallback: Aerr Frame
 
-Ærr Frame names a recurring failure mode: systems accepting cheaper local substitutes for globally satisfying answers while their local checks stay green. It supplies three measurements of that failure — a **floor** (the cost any genuine answer must pay), a **discipline** (how often that floor is paid), and a **drift** (how fast surrogates accumulate when it isn't).
+Ærr Frame is Art Seabra's research program for the cost of inquiry across biological and synthetic systems.
+
+It names a recurring failure mode: a system accepts a cheaper local substitute for a globally satisfying answer while its local checks stay green. The frame tracks three public measurements of that failure: a **floor** for the cost a genuine answer must pay, a **discipline** for how often that floor is paid, and a **drift** for how fast surrogates accumulate when it is not.
+
+This repository is the public source for the papers, empirical instances, and citation metadata. Internal instruments and private vault material are not required to read, cite, or inspect the public work here.
 
 ## Papers
 
@@ -12,29 +19,32 @@ In lineage order:
 |---|---|---|---|
 | 1 | [The Interrogation Collapse](papers/ic-cs/the-interrogation-collapse/) | 2026 | `papers/ic-cs/` |
 | 2 | [The Chaos Nexus of Self](papers/ic-cs/the-chaos-nexus-of-self/) | 2026 | `papers/ic-cs/` |
-| 3 | **[The Ærr Trinity](papers/aerr-trinity/)** | 2026-05-27 | `papers/aerr-trinity/` |
+| 3 | [The Ærr Trinity](papers/aerr-trinity/) | 2026, v0.4 | `papers/aerr-trinity/` |
 
-The IC|CS atom (papers 1 and 2) remains addressable under [`papers/ic-cs/`](papers/ic-cs/). It is preserved as one atom under the new umbrella.
+The IC⏐CS atom remains addressable under [`papers/ic-cs/`](papers/ic-cs/). It is preserved as one atom inside the broader Ærr Frame umbrella.
 
 ## Empirical instances
 
-Constructive instances of the Surrogate Existence Postulate across behavioral, explanatory, and geometric substrates.
+Constructive instances of the Surrogate Existence Postulate across behavioral, explanatory, and geometric substrates:
 
 - [Reward model overoptimization](empirical-instances/reward-overoptimization/) — behavioral substrate
 - [Unfaithful chain-of-thought](empirical-instances/unfaithful-cot/) — explanatory substrate
 - [Non-surjective activation steering](empirical-instances/non-surjective-steering/) — geometric substrate
 
-## Operational toolkit
+## How To Read
 
-**Ærr Sensor** — private/internal MCP server measuring κ, Ærr Rate, and Chain Drift on real systems. v0.1 ships the keystone formulae from the Trinity paper: `measure_kappa`, `aerr_rate`, `chain_drift`, `compute_floor`, `convergence_watch`.
+- Start with [The Ærr Trinity](papers/aerr-trinity/) for the current umbrella statement.
+- Use [`papers/ic-cs/`](papers/ic-cs/) for the historical pair that preceded the rename.
+- Use `empirical-instances/` as working evidence surfaces, not as claims of universal closure.
+- Use [CITATION.cff](CITATION.cff) for machine-readable citation metadata.
 
 ## Historical mirror
 
-[github.com/artseabra/ic-cs](https://github.com/artseabra/ic-cs) is the archived redirect that carried IC|CS before the rename. Old links remain live; the canon lives here under [`papers/ic-cs/`](papers/ic-cs/).
+[github.com/artseabra/ic-cs](https://github.com/artseabra/ic-cs) is the historical mirror that carried IC⏐CS before the rename. Old links remain live; the canon lives here under [`papers/ic-cs/`](papers/ic-cs/).
 
-## Also published at
+## Public Boundary
 
-- Academia.edu — *URL pending; will be added when the public page is stable.*
+This repository is public research infrastructure. Operational sensor work, private notes, draft review packets, and vault provenance are separate layers. If a claim is not present in this repository or its linked public sources, do not treat it as publicly established by this repo.
 
 ## Citation
 
