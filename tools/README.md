@@ -1,10 +1,12 @@
 # Tools
 
-The operational toolkit for the Ærr Frame lives in a separate repository:
+Reviewed: 2026-07-08
 
-→ [**Ærr Sensor**](https://github.com/artseabra/aerr-sensor) — MCP server measuring κ, Ærr Rate, and Chain Drift.
+The operational toolkit for the ÆrrFrame lives in a separate private repository:
 
-This folder is intentionally minimal; tools are versioned independently in `aerr-sensor`.
+→ **Ærr Sensor** — internal MCP server measuring κ, Ærr Rate, and Chain Drift.
+
+This folder is intentionally minimal; tools are versioned independently in the private `aerr-sensor` repository.
 
 ## Why a separate repo
 

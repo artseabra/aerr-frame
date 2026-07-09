@@ -1,5 +1,7 @@
 # Unfaithful Chain-of-Thought
 
+Reviewed: 2026-07-08
+
 **Substrate:** explanatory
 **SEP instance from:** [The Ærr Trinity §5.4](../../papers/aerr-trinity/the-aerr-trinity.md#54-constructive-instances)
 

@@ -1,8 +1,10 @@
 # IC|CS
 
+Reviewed: 2026-07-08
+
 **The Interrogation Collapse · The Chaos Nexus of Self**
 
-The two papers that opened what is now the Ærr Frame. IC|CS was the original name of the framework before its rename on 2026-05-18; the atom is preserved here.
+The two papers that opened what is now the ÆrrFrame. IC|CS was the original name of the framework before its rename on 2026-05-18; the atom is preserved here.
 
 | # | Title | Path |
 |---|---|---|
@@ -13,4 +15,4 @@ The Ærr Trinity (the third paper) consolidates the Interrogation Cost Law, the 
 
 ## Historical mirror
 
-The original public mirror of IC|CS remains live at [github.com/artseabra/ic-cs](https://github.com/artseabra/ic-cs). The canon now lives here under the Ærr Frame umbrella; the historical mirror is preserved so existing inbound links continue to resolve.
+The original public mirror of IC|CS remains live as an archived redirect at [github.com/artseabra/ic-cs](https://github.com/artseabra/ic-cs). The canon now lives here under the ÆrrFrame umbrella; the historical mirror is preserved so existing inbound links continue to resolve.

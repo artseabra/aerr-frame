@@ -1,5 +1,7 @@
 # The Ærr Trinity
 
+Reviewed: 2026-07-08
+
 A Cost-of-Inquiry Law at Three Orders
 
 | Field | Value |
@@ -31,7 +33,7 @@ The shared object is the *surrogate stratum*: outputs that pay less than the flo
 
 ## Operational toolkit
 
-The math in this paper is operationalized as the [Ærr Sensor](https://github.com/artseabra/aerr-sensor) MCP server.
+The math in this paper is operationalized as the private/internal Ærr Sensor MCP server.
 
 | Paper section | Sensor tool |
 |---|---|
