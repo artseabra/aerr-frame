@@ -2,7 +2,7 @@
 
 Reviewed: 2026-07-08
 Status: canonical public research home
-Lineage: renamed from IC⏐CS to ÆrrFrame on 2026-05-18
+Lineage: renamed from IC|CS to ÆrrFrame on 2026-05-18
 ASCII fallback: AerrFrame
 
 ÆrrFrame is Art Seabra's public research frame for the cost of inquiry across biological and synthetic systems.
@@ -30,7 +30,7 @@ In lineage order:
 | 2 | [The Chaos Nexus of Self](papers/ic-cs/the-chaos-nexus-of-self/) | 2026 | `papers/ic-cs/` |
 | 3 | [The Ærr Trinity](papers/aerr-trinity/) | 2026, v0.4 | `papers/aerr-trinity/` |
 
-The IC⏐CS atom remains addressable under [`papers/ic-cs/`](papers/ic-cs/). It is preserved as one atom inside the broader ÆrrFrame umbrella.
+The IC|CS atom remains addressable under [`papers/ic-cs/`](papers/ic-cs/). It is preserved as one atom inside the broader ÆrrFrame umbrella.
 
 ## Empirical instances
 
@@ -46,10 +46,11 @@ Constructive instances of the Surrogate Existence Postulate across behavioral, e
 - Use [`papers/ic-cs/`](papers/ic-cs/) for the historical pair that preceded the rename.
 - Use `empirical-instances/` as working evidence surfaces, not as claims of universal closure.
 - Use [CITATION.cff](CITATION.cff) for machine-readable citation metadata.
+- Treat sensor and instrumentation code as private/internal unless a public tool is explicitly linked from this repository.
 
 ## Historical mirror
 
-[github.com/artseabra/ic-cs](https://github.com/artseabra/ic-cs) is the historical mirror that carried IC⏐CS before the rename. Old links remain live; the canon lives here under [`papers/ic-cs/`](papers/ic-cs/).
+[github.com/artseabra/ic-cs](https://github.com/artseabra/ic-cs) is the historical mirror that carried IC|CS before the rename. Old links remain live; the canon lives here under [`papers/ic-cs/`](papers/ic-cs/).
 
 ## Public Boundary
 
