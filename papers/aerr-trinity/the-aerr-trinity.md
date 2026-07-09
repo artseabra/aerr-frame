@@ -2,16 +2,16 @@
 
 ## A Cost-of-Inquiry Law at Three Orders
 
-**Art Seabra**  
-**Ifthis Research**  
-Philadelphia, PA  
+**Art Seabra**
+**Ifthis Research**
+Philadelphia, PA
 
-**Status:** Preprint / working paper v0.4  
-**Date:** 2026-05-27  
-**DOI:** [10.5281/zenodo.TBD](https://doi.org/10.5281/zenodo.TBD)  
-**License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
-**Canonical repo:** [github.com/artseabra/aerr-frame](https://github.com/artseabra/aerr-frame)  
-**Archived IC|CS redirect:** [github.com/artseabra/ic-cs](https://github.com/artseabra/ic-cs)  
+**Status:** Preprint / working paper v0.4
+**Date:** 2026-05-27
+**DOI:** [10.5281/zenodo.TBD](https://doi.org/10.5281/zenodo.TBD)
+**License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+**Canonical repo:** [github.com/artseabra/aerr-frame](https://github.com/artseabra/aerr-frame)
+**Archived IC|CS redirect:** [github.com/artseabra/ic-cs](https://github.com/artseabra/ic-cs)
 
 ---
 
