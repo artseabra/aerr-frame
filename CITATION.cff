@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: software
 title: "ÆrrFrame"
-abstract: "A framework for the cost of inquiry across biological and synthetic systems. Includes The Interrogation Collapse, The Chaos Nexus of Self, and The Ærr Trinity."
+abstract: "A framework for the cost of inquiry across biological and synthetic systems. Includes The Interrogation Collapse, The Chaos Nexus of Self, and ÆrrTrinity."
 authors:
   - family-names: Seabra
     given-names: Art
@@ -12,7 +12,7 @@ url: "https://github.com/artseabra/aerr-frame"
 license: CC-BY-4.0
 preferred-citation:
   type: article
-  title: "The Ærr Trinity: A Cost-of-Inquiry Law at Three Orders"
+  title: "ÆrrTrinity: A Cost-of-Inquiry Law at Three Orders"
   authors:
     - family-names: Seabra
       given-names: Art
@@ -21,4 +21,4 @@ preferred-citation:
   month: 5
   url: "https://github.com/artseabra/aerr-frame/blob/main/papers/aerr-trinity/the-aerr-trinity.md"
   doi: "10.5281/zenodo.TBD"
-  notes: "Preprint, version v0.4. ASCII fallback title for platforms that mangle Æ: 'The Aerr Trinity: A Cost-of-Inquiry Law at Three Orders' (no terminal period)."
+  notes: "Preprint, version v0.4. ASCII fallback title for platforms that mangle Æ: 'AerrTrinity: A Cost-of-Inquiry Law at Three Orders' (no terminal period)."

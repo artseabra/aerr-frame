@@ -179,7 +179,7 @@ This heuristic operates as a sibling tool to the framework. Where the Interrogat
 
 Occam's Razor optimizes for parsimony. The Conservation Razor asks a different question: which explanation, if wrong, does the least damage to the system it's describing? Simplicity is not safety. A simple explanation that strips away a load-bearing element of reality — a causal pathway that looked like noise but was actually signal — can collapse the architecture it was meant to clarify.
 
-The Conservation Razor and the Phantom Floor Threshold are companions. The PFT defines the floor below which observation stops producing valid knowledge. The Conservation Razor defines the rules for walking near that edge: before you cut, check whether what you're cutting is structural. The cost-of-inquiry trinity formalizes the floor these razors traverse — see [Interrogation Cost Law](../research/drafts/new%20files%20and%20refactor/interrogation-cost-law.md), [Ærr Coefficient](../research/drafts/new%20files%20and%20refactor/aerr-coefficient.md), [Ærr Rate](../research/drafts/new%20files%20and%20refactor/aerr-rate.md).
+The Conservation Razor and the Phantom Floor Threshold are companions. The PFT defines the floor below which observation stops producing valid knowledge. The Conservation Razor defines the rules for walking near that edge: before you cut, check whether what you're cutting is structural. The cost-of-inquiry trinity formalizes the floor these razors traverse — see [Interrogation Cost Law](../../aerr-trinity/the-aerr-trinity.md#51-interrogation-cost-law), [ÆrrCoefficient](../../aerr-trinity/the-aerr-trinity.md#6-second-order-the-discipline), [ÆrrRate](../../aerr-trinity/the-aerr-trinity.md#7-third-order-the-drift).
 
 # The Interrogation Razor
 
@@ -229,7 +229,7 @@ This framework raises four questions it cannot yet answer.
 
 ## Can the Phantom Floor Threshold be formalized?
 
-*(Partially answered as of 2026-05-16 — see [Interrogation Cost Law](../research/drafts/new%20files%20and%20refactor/interrogation-cost-law.md) for the structural floor, [Ærr Coefficient](../research/drafts/new%20files%20and%20refactor/aerr-coefficient.md) for the discipline coefficient, [Ærr Rate](../research/drafts/new%20files%20and%20refactor/aerr-rate.md) for the dynamics. Body preserved as historical Open Question.)*
+*(Partially answered as of 2026-05-16 — see [Interrogation Cost Law](../../aerr-trinity/the-aerr-trinity.md#51-interrogation-cost-law) for the structural floor, [ÆrrCoefficient](../../aerr-trinity/the-aerr-trinity.md#6-second-order-the-discipline) for the discipline coefficient, [ÆrrRate](../../aerr-trinity/the-aerr-trinity.md#7-third-order-the-drift) for the dynamics. Body preserved as historical Open Question.)*
 
 Can the PFT be expressed mathematically — as a formal bound on the epistemic validity of observation given the information regime's properties? Or is it necessarily a qualitative diagnostic, identifiable through its markers (Falsifiability Decay and Observation Decoupling) but not reducible to a formula? The answer determines whether the framework can generate quantitative predictions or remains a classification and diagnostic tool.
 

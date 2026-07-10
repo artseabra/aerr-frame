@@ -3,7 +3,7 @@
 Reviewed: 2026-07-08
 
 **Substrate:** behavioral
-**SEP instance from:** [The Ærr Trinity §5.4](../../papers/aerr-trinity/the-aerr-trinity.md#54-constructive-instances)
+**SEP instance from:** [ÆrrTrinity §5.4](../../papers/aerr-trinity/the-aerr-trinity.md#54-constructive-instances)
 
 A Surrogate Existence Postulate (SEP) instance.
 
@@ -21,4 +21,4 @@ Gao, L., Schulman, J., and Hilton, J. (2023). Scaling laws for reward model over
 
 ## Trinity reading
 
-This is a Goodhart instance read at the floor, discipline, and drift levels. ICL identifies the floor (gold reward certification); κ measures the rate at which it gets paid; the Ærr Rate measures how fast pipelines drift when it doesn't. See also the paper's §11 distinction from neighboring claims.
+This is a Goodhart instance read at the floor, discipline, and drift levels. ICL identifies the floor (gold reward certification); κ measures the rate at which it gets paid; the ÆrrRate measures how fast pipelines drift when it doesn't. See also the paper's §11 distinction from neighboring claims.

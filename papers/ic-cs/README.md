@@ -11,7 +11,7 @@ The two papers that opened what is now the ÆrrFrame. IC|CS was the original nam
 | 1 | The Interrogation Collapse | [the-interrogation-collapse/](the-interrogation-collapse/) |
 | 2 | The Chaos Nexus of Self | [the-chaos-nexus-of-self/](the-chaos-nexus-of-self/) |
 
-The Ærr Trinity (the third paper) consolidates the Interrogation Cost Law, the Ærr Coefficient, and the Ærr Rate into one structure observed at three orders. See [../aerr-trinity/](../aerr-trinity/).
+ÆrrTrinity (the third paper) consolidates the Interrogation Cost Law, the ÆrrCoefficient, and the ÆrrRate into one structure observed at three orders. See [../aerr-trinity/](../aerr-trinity/).
 
 ## Historical mirror
 

@@ -28,7 +28,7 @@ In lineage order:
 |---|---|---|---|
 | 1 | [The Interrogation Collapse](papers/ic-cs/the-interrogation-collapse/) | 2026 | `papers/ic-cs/` |
 | 2 | [The Chaos Nexus of Self](papers/ic-cs/the-chaos-nexus-of-self/) | 2026 | `papers/ic-cs/` |
-| 3 | [The Ærr Trinity](papers/aerr-trinity/) | 2026, v0.4 | `papers/aerr-trinity/` |
+| 3 | [ÆrrTrinity](papers/aerr-trinity/) | 2026, v0.4 | `papers/aerr-trinity/` |
 
 The IC|CS atom remains addressable under [`papers/ic-cs/`](papers/ic-cs/). It is preserved as one atom inside the broader ÆrrFrame umbrella.
 
@@ -42,7 +42,7 @@ Constructive instances of the Surrogate Existence Postulate across behavioral, e
 
 ## How To Read
 
-- Start with [The Ærr Trinity](papers/aerr-trinity/) for the current umbrella statement.
+- Start with [ÆrrTrinity](papers/aerr-trinity/) for the current umbrella statement.
 - Use [`papers/ic-cs/`](papers/ic-cs/) for the historical pair that preceded the rename.
 - Use `empirical-instances/` as working evidence surfaces, not as claims of universal closure.
 - Use [CITATION.cff](CITATION.cff) for machine-readable citation metadata.
@@ -60,9 +60,9 @@ This repository is public research infrastructure. Operational sensor work, priv
 
 See [CITATION.cff](CITATION.cff) for machine-readable citation metadata. Quick form:
 
-> Seabra, A. (2026). *The Ærr Trinity: A Cost-of-Inquiry Law at Three Orders* (v0.4) [Preprint]. Ifthis Research. https://github.com/artseabra/aerr-frame.
+> Seabra, A. (2026). *ÆrrTrinity: A Cost-of-Inquiry Law at Three Orders* (v0.4) [Preprint]. Ifthis Research. https://github.com/artseabra/aerr-frame.
 
-ASCII fallback (for platforms that mangle Æ): *The Aerr Trinity: A Cost-of-Inquiry Law at Three Orders*
+ASCII fallback (for platforms that mangle Æ): *AerrTrinity: A Cost-of-Inquiry Law at Three Orders*
 
 ## License
 

@@ -1,25 +1,25 @@
-# The Ærr Trinity
+# ÆrrTrinity
 
 ## A Cost-of-Inquiry Law at Three Orders
 
-**Art Seabra**<br>
-**Ifthis Research**<br>
+**Art Seabra**\
+**Ifthis Research**\
 Philadelphia, PA
 
-**Status:** Preprint / working paper v0.4<br>
-**Date:** 2026-05-27<br>
-**DOI:** [10.5281/zenodo.TBD](https://doi.org/10.5281/zenodo.TBD)<br>
-**License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)<br>
-**Canonical repo:** [github.com/artseabra/aerr-frame](https://github.com/artseabra/aerr-frame)<br>
+**Status:** Preprint / working paper v0.4\
+**Date:** 2026-05-27\
+**DOI:** [10.5281/zenodo.TBD](https://doi.org/10.5281/zenodo.TBD)\
+**License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)\
+**Canonical repo:** [github.com/artseabra/aerr-frame](https://github.com/artseabra/aerr-frame)\
 **Archived IC|CS redirect:** [github.com/artseabra/ic-cs](https://github.com/artseabra/ic-cs)
 
 ---
 
 ## Abstract
 
-This paper introduces the Ærr Trinity: a unified cost-of-inquiry framework formalized at three orders: the floor, the discipline, and the drift. The first order is the Interrogation Cost Law, a law schema stating that a genuine answer to a demand must pay a cost bounded below by the structural complexity of that demand. The second order is the Ærr Coefficient, κ, a discipline parameter measuring how often a system pays the floor rather than accepting a surrogate. The third order is the Ærr Rate, the rate at which surrogate outputs accumulate when the floor is not paid.
+This paper introduces ÆrrTrinity: a unified cost-of-inquiry framework formalized at three orders: the floor, the discipline, and the drift. The first order is the Interrogation Cost Law, a law schema stating that a genuine answer to a demand must pay a cost bounded below by the structural complexity of that demand. The second order is the ÆrrCoefficient, κ, a discipline parameter measuring how often a system pays the floor rather than accepting a surrogate. The third order is the ÆrrRate, the rate at which surrogate outputs accumulate when the floor is not paid.
 
-The shared object is the surrogate stratum: the space of outputs that pay less than the cost floor, pass local inspection, and still fail to satisfy the demand they are mistaken as satisfying. The Trinity is not one equation with three names attached. It is a dependency stack: the Interrogation Cost Law defines the floor; κ measures whether that floor is paid; the Ærr Rate measures how fast unpaid floors accumulate into drift. This paper formalizes the stack, corrects the floor-weighted κ estimator, introduces count-rate and floor-weighted drift identities, gives a closed-form Chain Drift recurrence with a bounded coupling number, states the falsifiability conditions required to turn the Interrogation Cost Law from schema into domain law, and grounds the Surrogate Existence Postulate in three constructive instances from current AI research: reward model overoptimization, unfaithful chain-of-thought, and non-surjective activation steering.
+The shared object is the surrogate stratum: the space of outputs that pay less than the cost floor, pass local inspection, and still fail to satisfy the demand they are mistaken as satisfying. The Trinity is not one equation with three names attached. It is a dependency stack: the Interrogation Cost Law defines the floor; κ measures whether that floor is paid; the ÆrrRate measures how fast unpaid floors accumulate into drift. This paper formalizes the stack, corrects the floor-weighted κ estimator, introduces count-rate and floor-weighted drift identities, gives a closed-form Chain Drift recurrence with a bounded coupling number, states the falsifiability conditions required to turn the Interrogation Cost Law from schema into domain law, and grounds the Surrogate Existence Postulate in three constructive instances from current AI research: reward model overoptimization, unfaithful chain-of-thought, and non-surjective activation steering.
 
 The result is a qualitative-first but formally scoped framework for evaluating how systems produce convincing local success while failing global satisfaction. The paper does not claim universal empirical verification. It provides the canonical methodology and marks the remaining operationalization of demand complexity, production cost, and domain-specific cost floors as forward work.
 
@@ -33,9 +33,9 @@ AI collapsed the cost of answer-supply. It did not collapse the cost of demand-c
 
 A system can now produce fluent outputs faster than any institution can inspect them. Dashboards remain green. Benchmarks pass. Reward models approve. Chain-of-thought explanations sound coherent. Internal steering interventions produce the intended behavioral signature. Yet the demand may remain unpaid. The output may carry the shape of an answer while failing to satisfy what was asked. The structure is not merely error. It is a cost failure under local success.
 
-The Ærr Trinity names that structure at three orders.
+ÆrrTrinity names that structure at three orders.
 
-First, the Interrogation Cost Law names the floor: if an answer genuinely satisfies a demand, its production cost is bounded below by a function of that demand's structural complexity. Second, the Ærr Coefficient, κ, names discipline: the rate at which a system pays that floor across decision points. Third, the Ærr Rate names drift: the speed at which surrogate outputs accumulate when the floor is declined.
+First, the Interrogation Cost Law names the floor: if an answer genuinely satisfies a demand, its production cost is bounded below by a function of that demand's structural complexity. Second, the ÆrrCoefficient, κ, names discipline: the rate at which a system pays that floor across decision points. Third, the ÆrrRate names drift: the speed at which surrogate outputs accumulate when the floor is declined.
 
 The paper's central claim is narrow and deliberately scoped. The Trinity is not offered as a completed empirical law across all domains. It is a formal schema and measurement program for a recurring failure mode: systems accepting cheaper local substitutes for globally satisfying answers. The mature empirical law will exist only in domains where demand complexity, production cost, satisfaction, and the cost-floor function are operationalized in advance.
 
@@ -44,8 +44,8 @@ The shared object is the surrogate stratum. A surrogate is not merely a bad answ
 | Order | Quantity | Question | Answer |
 |---|---|---|---|
 | First | Interrogation Cost Law | Does a cost floor exist? | Yes, as a schema: satisfaction requires paying a floor. |
-| Second | Ærr Coefficient, κ | Is the floor paid? | κ measures floor-payment discipline. |
-| Third | Ærr Rate | What happens when it is not paid? | Surrogates accumulate at a rate governed by discipline and demand throughput. |
+| Second | ÆrrCoefficient, κ | Is the floor paid? | κ measures floor-payment discipline. |
+| Third | ÆrrRate | What happens when it is not paid? | Surrogates accumulate at a rate governed by discipline and demand throughput. |
 
 This paper consolidates the Trinity into one publishable statement. It also corrects two vulnerabilities in the earlier draft. First, the original count-rate identity connected κ and demand throughput to drift, but ICL appeared only implicitly through the definition of κ. This version keeps that identity and adds a floor-weighted drift identity in which the ICL floor appears explicitly. Second, the original cost-weighted κ estimator could exceed one under overpayment. This version replaces it with bounded floor-weighted compliance and floor-coverage estimators.
 
@@ -79,8 +79,8 @@ This paper makes five contributions.
 | $\sigma_{\text{local}}(O,D)$ | local satisfaction | Local inspection score of O against D |
 | $S$ | system S | A system receiving demands and producing outputs |
 | $\pi_i$ | policy choice i | The system's choice at the i-th Fork: pay or decline |
-| $\kappa_S$ | kappa of S | The Ærr Coefficient of system S |
-| $\kappa_S(t)$ | kappa of S at t | Time-varying Ærr Coefficient |
+| $\kappa_S$ | kappa of S | The ÆrrCoefficient of system S |
+| $\kappa_S(t)$ | kappa of S at t | Time-varying ÆrrCoefficient |
 | $\kappa_S^F$ | floor-weighted kappa | Floor-weighted compliance rate |
 | $\gamma_S^F$ | floor coverage gamma | Floor-coverage ratio allowing partial payment |
 | $\rho(t)$ | rho at t | Demand arrival rate |
@@ -101,13 +101,13 @@ The paper separates definitions, postulates, domain laws, empirical convergence,
 | Interrogation Cost Law | Law schema. It becomes a falsifiable domain law only after $C$, Cost, satisfaction, and $f$ are operationalized for a specified domain. |
 | Surrogate clause | Contrapositive of ICL under the same domain assumptions. |
 | Surrogate Existence Postulate | Separate postulate: in many nontrivial domains, under-floor outputs exist that pass local inspection while failing genuine satisfaction. |
-| Ærr Coefficient, κ | Discipline estimator: the rate at which a system pays the ICL floor. |
+| ÆrrCoefficient, κ | Discipline estimator: the rate at which a system pays the ICL floor. |
 | Floor-weighted κ | Bounded weighted estimator in $[0,1]$ for heterogeneous demand distributions. |
-| Ærr Rate | Count-rate identity measuring surrogate accumulation per unit time. |
-| Floor-weighted Ærr Rate | Drift identity measuring accumulated unpaid floor-mass per unit time. |
+| ÆrrRate | Count-rate identity measuring surrogate accumulation per unit time. |
+| Floor-weighted ÆrrRate | Drift identity measuring accumulated unpaid floor-mass per unit time. |
 | Phantom Floor Threshold | Diagnostic regime: local checks remain green while genuine satisfaction fails. |
 | Chain Drift | Additive lower bound plus multiplicative coupling recurrence when surrogates condition later demands. |
-| Ærr Barrier, $B(D)$ | Forward quantity: the cost of capture or the geometry of declining a salient but wrong attractor. Not developed in this paper. |
+| ÆrrBarrier, $B(D)$ | Forward quantity: the cost of capture or the geometry of declining a salient but wrong attractor. Not developed in this paper. |
 
 This scoping is not cosmetic. Without it, the Interrogation Cost Law can be misread as an already completed universal law. It is not. It is the law form. Its domain instances are falsifiable only after a testable floor is specified.
 
@@ -124,7 +124,7 @@ Every inquiry begins with an Interrogation operation that produces a demand $D$.
 
 The declined branch does not disappear. It populates the surrogate stratum: the space of outputs that cost less than the floor, pass a local check, and fail the demand.
 
-The Trinity is three measurements of that stratum. ICL says the stratum has a boundary. κ says how often the system enters it. The Ærr Rate says how fast it fills.
+The Trinity is three measurements of that stratum. ICL says the stratum has a boundary. κ says how often the system enters it. The ÆrrRate says how fast it fills.
 
 Two razors stand on either side of this object.
 
@@ -199,7 +199,7 @@ These instances span behavioral, explanatory, and geometric substrates. In each 
 
 ## 6. Second order: the discipline
 
-ICL says that a floor exists. It does not say whether a system pays it. The Ærr Coefficient, κ, measures floor-payment discipline.
+ICL says that a floor exists. It does not say whether a system pays it. The ÆrrCoefficient, κ, measures floor-payment discipline.
 
 Let a system $S$ face demands $D_1,\dots,D_n$ and choose at each Fork:
 
@@ -678,7 +678,7 @@ The Trinity is the formal core of the ÆrrFrame, but not the whole frame.
 | Path A / Path B | Stance toward inquiry | Path A accepts surrogates from outside the work; Path B pays or names the unpaid bill. |
 | Causal Chain | Compounding structure | The propagation surface for Chain Drift. |
 | Halting Hole | Self-measurement limit | Deferred; not formalized here. |
-| Ærr Barrier, $B(D)$ | Fourth quantity candidate | Deferred; likely capture cost or geometric enforcement of the floor. |
+| ÆrrBarrier, $B(D)$ | Fourth quantity candidate | Deferred; likely capture cost or geometric enforcement of the floor. |
 
 The Trinity is the formal core of a broader framework concerned with cognition under capture pressure. This paper does not claim to deliver that broader program. It delivers a narrower mechanism: a way to name and measure the floor, the discipline, and the drift that make such a program testable.
 
@@ -711,19 +711,19 @@ Fifth, Halting Hole and nonlinear Chain Drift are deferred. The present Chain Dr
 5. Extend Chain Drift to nonlinear coupling where $\eta$, $\rho$, or $C(D)$ depend on accumulated surrogate mass.
 6. Add non-LLM constructive instances of the Surrogate Existence Postulate.
 7. Formalize the Halting Hole as a self-measurement limit.
-8. Develop the Ærr Barrier, $B(D)$, as a fourth quantity: the cost of capture or the geometry of declining a salient but wrong attractor.
+8. Develop the ÆrrBarrier, $B(D)$, as a fourth quantity: the cost of capture or the geometry of declining a salient but wrong attractor.
 
 ---
 
 ## 15. Conclusion
 
-The Ærr Trinity names one structure at three orders.
+ÆrrTrinity names one structure at three orders.
 
 The first order is the floor. Genuine answers must pay a cost bounded below by the structural complexity of the demand.
 
 The second order is discipline. κ measures whether a system pays the floor or accepts a surrogate.
 
-The third order is drift. The Ærr Rate measures how fast surrogates accumulate when discipline fails under demand throughput.
+The third order is drift. The ÆrrRate measures how fast surrogates accumulate when discipline fails under demand throughput.
 
 The shared object is the surrogate stratum: outputs that cost less than the floor, pass local inspection, and fail genuine satisfaction. The paper's core warning is therefore simple: local success is not satisfaction. A system can look increasingly competent while accumulating underpaid demands into a hidden stratum of failure.
 
@@ -774,19 +774,19 @@ BibTeX:
 ```bibtex
 @misc{seabra2026aerr,
   author       = {Seabra, Art},
-  title        = {The {{\AE}}rr Trinity: A Cost-of-Inquiry Law at Three Orders},
+  title        = {{{\AE}}rrTrinity: A Cost-of-Inquiry Law at Three Orders},
   year         = {2026},
   month        = may,
   version      = {v0.4},
   doi          = {10.5281/zenodo.TBD},
-  url          = {https://github.com/artseabra/aerr-frame/blob/main/papers/aerr-trinity/the-aerr-trinity.md},
+  url          = {https://github.com/artseabra/aerr-frame},
   note         = {Preprint}
 }
 ```
 
 Plain text:
 
-> Seabra, A. (2026). *The Ærr Trinity: A Cost-of-Inquiry Law at Three Orders* (v0.4) [Preprint]. Ifthis Research. https://github.com/artseabra/aerr-frame.
+> Seabra, A. (2026). *ÆrrTrinity: A Cost-of-Inquiry Law at Three Orders* (v0.4) [Preprint]. Ifthis Research. https://github.com/artseabra/aerr-frame.
 
 ---
 
