@@ -10,15 +10,16 @@ authors:
 repository-code: "https://github.com/artseabra/aerr-frame"
 url: "https://github.com/artseabra/aerr-frame"
 license: CC-BY-4.0
+version: v0.5
+date-released: 2026-06-03
 preferred-citation:
   type: article
-  title: "ÆrrTrinity: A Cost-of-Inquiry Law at Three Orders"
+  title: "ÆrrTrinity: A Three-Order Framework for the Cost of Inquiry"
   authors:
     - family-names: Seabra
       given-names: Art
       affiliation: Ifthis Research
   year: 2026
-  month: 5
+  month: 6
   url: "https://github.com/artseabra/aerr-frame/blob/main/papers/aerr-trinity/the-aerr-trinity.md"
-  doi: "10.5281/zenodo.TBD"
-  notes: "Preprint, version v0.4. ASCII fallback title for platforms that mangle Æ: 'AerrTrinity: A Cost-of-Inquiry Law at Three Orders' (no terminal period)."
+  notes: "Preprint / protocol draft, version v0.5. ASCII fallback title for platforms that mangle Æ: 'AerrTrinity: A Three-Order Framework for the Cost of Inquiry' (no terminal period)."

@@ -2,12 +2,18 @@
 
 ## A Framework for Evaluating Epistemic Validity in Systems Transparency
 
-**Author:** Art Seabra
-*ifthis|studio / Luster.Cleaning / Coppr*
-Philadelphia, PA
+**Author:** Art Seabra\
+*ifthis|studio / Luster.Cleaning / Coppr*\
+Philadelphia, PA\
 artsea@ifth.is
 
+**Status:** Open research / working paper\
+**First public date:** 2026-04-08\
+**License:** [CC BY 4.0](../../../LICENSE)\
+**Canonical repo:** [github.com/artseabra/aerr-frame](https://github.com/artseabra/aerr-frame)
+
 ---
+
 ## Abstract
 The field of mechanistic interpretability operates under an implicit assumption: that the systems being observed are passive subjects of investigation. This paper challenges that assumption by reframing interpretability as a strategic interaction between observer and system — an interrogation in which the outcome depends not only on the tools employed but on the information regime governing who knows what about whom, and who designed the conditions under which knowing became possible.
 

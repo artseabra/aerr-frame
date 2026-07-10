@@ -1,16 +1,16 @@
 # ÆrrTrinity
 
-Reviewed: 2026-07-08
+Reviewed: 2026-07-09
 
-A Cost-of-Inquiry Law at Three Orders
+A Three-Order Framework for the Cost of Inquiry
 
 | Field | Value |
 |---|---|
 | Author | Art Seabra · Ifthis Research |
-| Date | 2026-05-27 |
-| Version | v0.4 (preprint) |
+| Date | 2026-06-03 |
+| Version | v0.5 (preprint / protocol draft) |
 | License | [CC BY 4.0](../../LICENSE) |
-| DOI | 10.5281/zenodo.TBD |
+| Canonical source | [the-aerr-trinity.md](the-aerr-trinity.md) |
 
 ## Abstract
 
@@ -29,7 +29,7 @@ The shared object is the *surrogate stratum*: outputs that pay less than the flo
 | [the-aerr-trinity.md](the-aerr-trinity.md) | The paper (canonical markdown source) |
 | [the-aerr-trinity.pdf](the-aerr-trinity.pdf) | PDF export |
 | [study-guide.md](study-guide.md) | Pedagogical companion (quiz, essay prompts, glossary) |
-| [slides/the-aerr-trinity-slides.pdf](slides/the-aerr-trinity-slides.pdf) | Presentation deck (PDF export of the Keynote source) |
+| [slides/the-aerr-trinity-slides.pdf](slides/the-aerr-trinity-slides.pdf) | Historical v0.4 presentation deck (PDF export of the Keynote source) |
 
 ## Operational toolkit
 

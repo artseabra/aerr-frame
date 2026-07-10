@@ -1,6 +1,6 @@
 # ÆrrFrame
 
-Reviewed: 2026-07-08
+Reviewed: 2026-07-09
 Status: canonical public research home
 Lineage: renamed from IC|CS to ÆrrFrame on 2026-05-18
 ASCII fallback: AerrFrame
@@ -24,11 +24,11 @@ This repository is the canonical **ÆrrResearch** entry: papers, empirical insta
 
 In lineage order:
 
-| # | Title | Year | Path |
-|---|---|---|---|
-| 1 | [The Interrogation Collapse](papers/ic-cs/the-interrogation-collapse/) | 2026 | `papers/ic-cs/` |
-| 2 | [The Chaos Nexus of Self](papers/ic-cs/the-chaos-nexus-of-self/) | 2026 | `papers/ic-cs/` |
-| 3 | [ÆrrTrinity](papers/aerr-trinity/) | 2026, v0.4 | `papers/aerr-trinity/` |
+| # | Title | Public date | Read | Download |
+|---|---|---|---|---|
+| 1 | The Interrogation Collapse | 2026-04-08 | [Paper](papers/ic-cs/the-interrogation-collapse/the-interrogation-collapse.md) | [PDF](papers/ic-cs/the-interrogation-collapse/the-interrogation-collapse.pdf) |
+| 2 | The Chaos Nexus of Self | 2026-04-09 | [Paper](papers/ic-cs/the-chaos-nexus-of-self/the-chaos-nexus-of-self.md) | [PDF](papers/ic-cs/the-chaos-nexus-of-self/the-chaos-nexus-of-self.pdf) |
+| 3 | ÆrrTrinity | 2026-06-03, v0.5 | [Paper](papers/aerr-trinity/the-aerr-trinity.md) | [PDF](papers/aerr-trinity/the-aerr-trinity.pdf) |
 
 The IC|CS atom remains addressable under [`papers/ic-cs/`](papers/ic-cs/). It is preserved as one atom inside the broader ÆrrFrame umbrella.
 
@@ -62,9 +62,9 @@ This repository is public research infrastructure. Operational sensor work, priv
 
 See [CITATION.cff](CITATION.cff) for machine-readable citation metadata. Quick form:
 
-> Seabra, A. (2026). *ÆrrTrinity: A Cost-of-Inquiry Law at Three Orders* (v0.4) [Preprint]. Ifthis Research. https://github.com/artseabra/aerr-frame.
+> Seabra, A. (2026). *ÆrrTrinity: A Three-Order Framework for the Cost of Inquiry* (v0.5) [Preprint / protocol draft]. Ifthis Research. https://github.com/artseabra/aerr-frame.
 
-ASCII fallback (for platforms that mangle Æ): *AerrTrinity: A Cost-of-Inquiry Law at Three Orders*
+ASCII fallback (for platforms that mangle Æ): *AerrTrinity: A Three-Order Framework for the Cost of Inquiry*
 
 ## License
 

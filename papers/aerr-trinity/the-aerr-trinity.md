@@ -1,14 +1,13 @@
 # ÆrrTrinity
 
-## A Cost-of-Inquiry Law at Three Orders
+## A Three-Order Framework for the Cost of Inquiry
 
 **Art Seabra**\
 **Ifthis Research**\
 Philadelphia, PA
 
-**Status:** Preprint / working paper v0.4\
-**Date:** 2026-05-27\
-**DOI:** [10.5281/zenodo.TBD](https://doi.org/10.5281/zenodo.TBD)\
+**Status:** Preprint / protocol draft v0.5\
+**Date:** 2026-06-03\
 **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)\
 **Canonical repo:** [github.com/artseabra/aerr-frame](https://github.com/artseabra/aerr-frame)\
 **Archived IC|CS redirect:** [github.com/artseabra/ic-cs](https://github.com/artseabra/ic-cs)
@@ -21,7 +20,7 @@ This paper introduces ÆrrTrinity: a unified cost-of-inquiry framework formalize
 
 The shared object is the surrogate stratum: the space of outputs that pay less than the cost floor, pass local inspection, and still fail to satisfy the demand they are mistaken as satisfying. The Trinity is not one equation with three names attached. It is a dependency stack: the Interrogation Cost Law defines the floor; κ measures whether that floor is paid; the ÆrrRate measures how fast unpaid floors accumulate into drift. This paper formalizes the stack, corrects the floor-weighted κ estimator, introduces count-rate and floor-weighted drift identities, gives a closed-form Chain Drift recurrence with a bounded coupling number, states the falsifiability conditions required to turn the Interrogation Cost Law from schema into domain law, and grounds the Surrogate Existence Postulate in three constructive instances from current AI research: reward model overoptimization, unfaithful chain-of-thought, and non-surjective activation steering.
 
-The result is a qualitative-first but formally scoped framework for evaluating how systems produce convincing local success while failing global satisfaction. The paper does not claim universal empirical verification. It provides the canonical methodology and marks the remaining operationalization of demand complexity, production cost, and domain-specific cost floors as forward work.
+The result is a qualitative-first but formally scoped framework for evaluating how systems produce convincing local success while failing global satisfaction. The paper does not claim universal empirical verification. Full operationalization remains forward work; KEP-1 provides a bounded pilot protocol for code-generation tasks in which demand, local checks, satisfaction oracle, cost, floor-payment discipline, and surrogate accumulation can be fixed before evaluation.
 
 **Keywords:** cost of inquiry, AI alignment, Goodhart, chain-of-thought faithfulness, activation steering, mechanistic interpretability, epistemic validity, surrogate outputs, local satisfaction, demand complexity, ÆrrFrame
 
@@ -53,13 +52,14 @@ The result is not a metaphor. It is a measurement language for systems whose che
 
 ### 1.1 Contributions
 
-This paper makes five contributions.
+This paper makes six contributions.
 
 1. It defines a bounded floor-weighted compliance estimator, $\kappa^F$, replacing a cost-weighted form that could exceed one under overpayment.
 2. It introduces a floor-weighted drift identity that makes the Interrogation Cost Law explicit in dynamics through $f(C(D))$.
 3. It gives a closed-form Chain Drift recurrence with the bounded coupling number $x_i=(1-\kappa_i)\eta_i\rho_i\Delta t_i$.
 4. It distinguishes the Interrogation Cost Law as a law schema from falsifiable domain laws, specifying the conditions under which the schema becomes empirically refutable.
 5. It grounds the Surrogate Existence Postulate in three constructive instances across behavioral, explanatory, and geometric substrates.
+6. It specifies KEP-1, a bounded pilot protocol for measuring surrogate acceptance, floor-payment discipline, and surrogate accumulation in code-generation tasks.
 
 ---
 
@@ -183,9 +183,9 @@ The Surrogate Existence Postulate is not introduced as a convenience. It has ope
 
 | Instance | Under-floor output | Local check | Genuine failure | κ-positioning |
 |---|---|---|---|---|
-| Reward model overoptimization | Output optimized for a proxy reward model | High proxy reward | Gold reward or true preference degrades | κ is the rate at which the pipeline performs gold-reward certification rather than accepting the proxy. |
-| Unfaithful chain-of-thought | Plausible reasoning trace | Coherent explanation | Explanation fails to track the causal driver of the answer | κ is the rate at which explanations are intervention-tested rather than accepted as fluent. |
-| Non-surjective activation steering | Steered activation behavior | White-box steering success | State lacks a natural prompt preimage | κ is the rate at which steered states are prompt-reachability certified rather than deployed as black-box equivalents. |
+| Reward model overoptimization (Gao et al. 2023) | Output optimized for a proxy reward model | High proxy reward | Gold reward or true preference degrades | κ is the rate at which the pipeline performs gold-reward certification rather than accepting the proxy. |
+| Unfaithful chain-of-thought (Turpin et al. 2023) | Plausible reasoning trace | Coherent explanation | Explanation fails to track the causal driver of the answer | κ is the rate at which explanations are intervention-tested rather than accepted as fluent. |
+| Non-surjective activation steering (Mishra et al. 2026) | Steered activation behavior | White-box steering success | State lacks a natural prompt preimage | κ is the rate at which steered states are prompt-reachability certified rather than deployed as black-box equivalents. |
 
 In reward model overoptimization, the demand is to produce an output genuinely preferred by humans. The local check is proxy reward. The floor is the cost of reliable preference certification through human evaluation or a robust gold reward model. The surrogate appears when proxy score increases while gold reward declines.
 
@@ -633,10 +633,10 @@ This paper treats external work as convergence, not verification. The cited pape
 
 | Work | Relevance |
 |---|---|
-| Reward model overoptimization | Proxy reward can rise while gold reward degrades: local score succeeds while true preference fails. |
-| Unfaithful chain-of-thought | Explanation plausibility can diverge from causal faithfulness. |
-| Non-surjective activation steering | White-box steerability can diverge from prompt-reachable internal states. |
-| Attractor Models | Iterative refinement and implicit fixed-point dynamics suggest architectural mechanisms for stabilizing refinement rather than relying on surface output alone. |
+| Reward model overoptimization (Gao et al. 2023) | Proxy reward can rise while gold reward degrades: local score succeeds while true preference fails. |
+| Unfaithful chain-of-thought (Turpin et al. 2023) | Explanation plausibility can diverge from causal faithfulness. |
+| Non-surjective activation steering (Mishra et al. 2026) | White-box steerability can diverge from prompt-reachable internal states. |
+| Attractor Models (Fein-Ashley and Rashidinejad 2026) | Iterative refinement and implicit fixed-point dynamics suggest architectural mechanisms for stabilizing refinement rather than relying on surface output alone. |
 
 The strongest convergence is geometric. Activation steering can produce locally successful behavior while moving the residual stream off the manifold of states reachable through natural prompting. That is not identical to the Trinity, but it is a clean instance of local success diverging from the demand a reader might mistakenly infer: prompt-side reachability or black-box equivalence.
 
@@ -655,11 +655,17 @@ The Trinity operates near established bounds without collapsing into them.
 | Kolmogorov complexity | Description length of an object | Candidate ancestry for $C(D)$, not the cost relation itself. |
 | Solomonoff induction | Universal inductive inference over computable hypotheses | Adjacent to inference cost and prior weighting, not demand satisfaction. |
 | Chaitin program-size complexity | Program length / algorithmic randomness | Adjacent complexity lineage. |
-| Minimum Description Length | Model fit and description length | Concerns model selection, not answer satisfaction under a demand. |
+| Minimum Description Length (Rissanen 1978) | Model fit and description length | Concerns model selection, not answer satisfaction under a demand. |
 | Landauer principle | Physical cost of irreversible computation | Structural parallel: a hard floor, but physical rather than epistemic. |
-| P vs NP / proof complexity | Computational cost and verification | Relevant to certification asymmetry, not equivalent to ICL. |
-| No-free-lunch theorems | Averaged optimizer performance | Domain-different: search performance over problem classes, not satisfaction cost. |
-| Goodhart effects | Proxy optimization failure | Captures local-check capture, one mechanism of the surrogate clause, but does not by itself name the cost floor or the discipline coefficient. Reward model overoptimization (§5.4) is a Goodhart instance read at the floor, discipline, and drift levels. |
+| P vs NP / proof complexity (Cook 1971; Karp 1972) | Computational cost and verification | Relevant to certification asymmetry, not equivalent to ICL. |
+| No-free-lunch theorems (Wolpert and Macready 1997) | Averaged optimizer performance | Domain-different: search performance over problem classes, not satisfaction cost. |
+| Goodhart effects (Goodhart 1984) | Proxy optimization failure | Captures local-check capture, one mechanism of the surrogate clause, but does not by itself name the cost floor or the discipline coefficient. Reward model overoptimization (§5.4) is a Goodhart instance read at the floor, discipline, and drift levels. |
+
+### 11.1 Thermodynamic ancestry and epistemic non-reduction
+
+The Trinity is adjacent to thermodynamic and information-theoretic lower-bound traditions, but it does not reduce epistemic satisfaction to physical energy expenditure. Landauer's principle gives a physical lower bound for irreversible information erasure. Biological-computation work extends that lineage by comparing cellular computation to generalized thermodynamic limits; neural energy-budget work shows that signaling and cognition are not free in biological substrates; intelligent-soft-matter and organism-behavior thermodynamics extend the same cost background into embodied, adaptive systems (Attwell and Laughlin 2001; Kempes et al. 2017; De Bari et al. 2023; Baulin et al. 2025).
+
+These results support the broader premise that information processing is not costless. They do not prove the Interrogation Cost Law. ICL concerns satisfaction of a demand under a domain-specific cost measure. Its floor may include compute, human labor, verification burden, proof effort, latency, money, cognitive attention, or other substrate-specific costs. Thermodynamics supplies ancestry and constraint-background; the Trinity supplies a domain-relative measurement language for floor payment, surrogate acceptance, and drift.
 
 The distinctive content is the coupling of demand complexity to answer cost, the measurement of floor-payment discipline, and the dynamic rate of surrogate accumulation under demand throughput.
 
@@ -686,36 +692,106 @@ The distinction matters. Mistaking a motivating horizon for a delivered result w
 
 ---
 
-## 13. Limitations
+## 13. Pilot Evaluation Protocol: KEP-1
+
+The present draft adds a bounded pilot protocol rather than claiming a completed empirical result. KEP-1 is designed to test the Trinity in the smallest domain where the variables become objective: Python code-generation tasks with visible local tests and a stronger held-out oracle.
+
+Working title:
+
+> **KEP-1: A Floor-Payment Protocol for Measuring Surrogate Acceptance in Code-Generation Systems**
+
+The protocol is filed in the vault at `Plans/aerr-frame/evaluations/kep-1-code-generation/`. Its primary target is EvalPlus HumanEval+, with MBPP+ as an optional secondary dataset. SWE-bench Lite or Verified is deferred to a later KEP-2 because repository-level repair is more realistic but heavier and noisier.
+
+### 13.1 Experimental structure
+
+| Component | KEP-1 definition |
+|---|---|
+| Domain | Python coding tasks from HumanEval+ and optionally MBPP+. |
+| Demand $D_i$ | Problem prompt, function signature, and visible/base tests. |
+| Output $O_i$ | Generated candidate solution. |
+| Local check $\sigma_{\text{local}}$ | Syntax validity plus original/public tests. |
+| Satisfaction oracle $V(O,D)$ | EvalPlus augmented test suite pass/fail. |
+| Surrogate | Output accepted by local check but rejected by the augmented oracle. |
+| Cost | Tokens, wall time, verifier calls, verifier runtime, GPU seconds, monetary estimate, and optional energy logging. |
+| Complexity $C(D)$ | Pre-registered prompt-visible features: prompt token count, function arity, visible/base test count, type diversity, and branch/constraint keyword count. |
+
+### 13.2 Treatments
+
+| Treatment | Policy | Acceptance rule |
+|---|---|---|
+| `T0_local_only` | One generation; syntax and public/base tests only. | Accept if local checks pass. |
+| `T1_local_repair` | One generation; public/base tests; bounded repair using only public/base failures. | Accept if local checks pass after bounded repair. |
+| `T2_conservation_certified` | Generation; public/base tests; augmented oracle as external certification. | Accept only if the augmented oracle passes. |
+
+The augmented oracle is not used for repair in the primary comparison. If hidden/augmented failures are placed in the synthesis loop, that becomes a different condition: oracle-in-loop synthesis, not clean certification.
+
+### 13.3 Planned outputs
+
+| Output | Role |
+|---|---|
+| `kep1_runs.jsonl` | One row per task/treatment with model, decoding, cost, local check, oracle, acceptance, surrogate, κ, and floor-mass fields. |
+| `kep1_runs.csv` | Tabular copy of the JSONL log. |
+| `kep1_metrics.csv` | Per-treatment pass, surrogate, κ, Ærr, and cost metrics. |
+| `kep1_results_summary.md` | Manuscript-facing summary, including negative results. |
+| `kelvin-console-inventory.md` | Inventory of which Kelvin variables exist and which are absent. |
+
+Kelvin Console is instrumentation and visualization, not the evidence by itself. The first pilot should be headless, reproducible, and oracle-checked. Manual hand controls are excluded from the primary evidence set because they introduce operator bias and shift the paper toward an HCI study.
+
+### 13.4 Result table placeholder
+
+| Treatment | Local pass rate | Oracle pass rate | Accepted surrogate rate | $\kappa_F$ | Ærr / 100 accepted | Cost / oracle-satisfying answer |
+|---|---:|---:|---:|---:|---:|---:|
+| `T0` | TBD | TBD | TBD | TBD | TBD | TBD |
+| `T1` | TBD | TBD | TBD | TBD | TBD | TBD |
+| `T2` | TBD | TBD | TBD | TBD | TBD | TBD |
+
+### 13.5 Falsifiers
+
+The protocol must be able to bite. Before the real run, the following falsifiers remain active:
+
+| Claim | Falsifier |
+|---|---|
+| Local checks can hide surrogates. | Local-pass outputs almost always pass the augmented oracle. |
+| $\kappa$ captures certification discipline. | $\kappa$ does not distinguish accepted-surrogate rates across treatments. |
+| The cost floor is complexity-sensitive. | $C(D)$ has no relationship to minimum successful cost or surrogate risk. |
+| Ærr tracks accumulation. | Surrogate accumulation does not scale with low certification discipline or demand throughput. |
+| Kelvin telemetry helps. | Kelvin metrics do not improve surrogate prediction over trivial baselines. |
+
+If KEP-1 returns negative results, the result is still useful: it narrows the domain in which the Trinity has measured bite and prevents the framework from promoting a local intuition into a universal claim.
+
+---
+
+## 14. Limitations
 
 This paper has five explicit limitations.
 
-First, $C(D)$ is not yet operationalized. Candidate measures may include graph complexity, proof length, dependency depth, annotation burden, human review time, or substrate-specific measures over Filaments and Nodes in the broader Ærr architecture.
+First, $C(D)$ is only operationalized for KEP-1 as a bounded code-generation pilot. Candidate measures outside that domain may include graph complexity, proof length, dependency depth, annotation burden, human review time, or substrate-specific measures over Filaments and Nodes in the broader Ærr architecture.
 
 Second, Cost is substrate-dependent. Human labor, compute, latency, cognitive effort, money, proof effort, and verification burden are not interchangeable without a conversion model.
 
 Third, $f$ is not universal as stated. A universal monotone function would not be empirically meaningful without domain-specific grounding.
 
-Fourth, the constructive instances are LLM- and AI-system-specific. The postulate plausibly extends to institutional drift, peer review under load, dashboard rot, and measurement-driven organizations, but that range is not established here.
+Fourth, the constructive instances and KEP-1 pilot are LLM- and AI-system-specific. The postulate plausibly extends to institutional drift, peer review under load, dashboard rot, and measurement-driven organizations, but that range is not established here.
 
 Fifth, Halting Hole and nonlinear Chain Drift are deferred. The present Chain Drift model is linear multiplicative propagation. Nonlinear collapse is named only as forward work.
 
 ---
 
-## 14. Forward work
+## 15. Forward work
 
-1. Operationalize $C(D)$ in at least three domains: code review, proof verification, and peer review.
-2. Define Cost for human, computational, and hybrid substrates.
-3. Estimate $f$ empirically from held-out domain data.
-4. Build domain ICL tests with pre-registered floor functions and refutation conditions.
-5. Extend Chain Drift to nonlinear coupling where $\eta$, $\rho$, or $C(D)$ depend on accumulated surrogate mass.
-6. Add non-LLM constructive instances of the Surrogate Existence Postulate.
-7. Formalize the Halting Hole as a self-measurement limit.
-8. Develop the ÆrrBarrier, $B(D)$, as a fourth quantity: the cost of capture or the geometry of declining a salient but wrong attractor.
+1. Run the KEP-1 EvalPlus pilot and report negative results if they occur.
+2. Operationalize $C(D)$ in at least three domains: code review, proof verification, and peer review.
+3. Define Cost for human, computational, and hybrid substrates.
+4. Estimate $f$ empirically from held-out domain data.
+5. Build additional domain ICL tests with pre-registered floor functions and refutation conditions.
+6. Extend Chain Drift to nonlinear coupling where $\eta$, $\rho$, or $C(D)$ depend on accumulated surrogate mass.
+7. Add non-LLM constructive instances of the Surrogate Existence Postulate.
+8. Formalize the Halting Hole as a self-measurement limit.
+9. Develop the ÆrrBarrier, $B(D)$, as a fourth quantity: the cost of capture or the geometry of declining a salient but wrong attractor.
 
 ---
 
-## 15. Conclusion
+## 16. Conclusion
 
 ÆrrTrinity names one structure at three orders.
 
@@ -733,15 +809,25 @@ The Trinity does not solve that failure. It gives it a floor, a coefficient, and
 
 ## References
 
+Attwell, D., and Laughlin, S. B. 2001. An energy budget for signaling in the grey matter of the brain. *Journal of Cerebral Blood Flow & Metabolism*, 21, 1133-1145. DOI: 10.1097/00004647-200110000-00001.
+
+Baulin, V. A., Giacometti, A., Fedosov, D. A., Ebbens, S. J., Varela-Rosales, N. R., Feliu, N., Chowdhury, M., Hu, M., Füchslin, R. M., Dijkstra, M., Mussel, M., van Roij, R., Xie, D., Tzanov, V., Zu, M., Hidalgo-Caballero, S., Yuan, Y., Cocconi, L., Ghim, C.-M., et al. 2025. Intelligent soft matter: towards embodied intelligence. *Soft Matter*, 21, 4129-4145. DOI: 10.1039/D5SM00174A.
+
 Chaitin, G. J. 1966. On the length of programs for computing finite binary sequences. *Journal of the ACM*, 13, 547–569. DOI: 10.1145/321356.321363.
 
 Cook, S. A. 1971. The complexity of theorem-proving procedures. *Proceedings of the Third Annual ACM Symposium on Theory of Computing*, 151–158. DOI: 10.1145/800157.805047.
+
+De Bari, B., Dixon, J., Kondepudi, D., and Vaidya, A. 2023. Thermodynamics, organisms and behaviour. *Philosophical Transactions of the Royal Society A*, 381, 20220278. DOI: 10.1098/rsta.2022.0278.
 
 Fein-Ashley, J., and Rashidinejad, P. 2026. *Solve the Loop: Attractor Models for Language and Reasoning*. arXiv:2605.12466.
 
 Gao, L., Schulman, J., and Hilton, J. 2023. Scaling laws for reward model overoptimization. *Proceedings of the 40th International Conference on Machine Learning*, PMLR 202:10835–10866. arXiv:2210.10760.
 
+Goodhart, C. A. E. 1984. Problems of monetary management: the U.K. experience. In *Monetary Theory and Practice*, 91–121. Macmillan.
+
 Karp, R. M. 1972. Reducibility among combinatorial problems. In R. E. Miller and J. W. Thatcher, eds., *Complexity of Computer Computations*, 85–103. Plenum Press.
+
+Kempes, C. P., Wolpert, D. H., Cohen, Z., and Pérez-Mercader, J. 2017. The thermodynamic efficiency of computations made in cells across the range of life. *Philosophical Transactions of the Royal Society A*, 375, 20160343. DOI: 10.1098/rsta.2016.0343.
 
 Kolmogorov, A. N. 1965/1968. Three approaches to the quantitative definition of information. *Problems of Information Transmission*, 1, 1–7; English version in *International Journal of Computer Mathematics*, 2, 157–168.
 
@@ -774,19 +860,18 @@ BibTeX:
 ```bibtex
 @misc{seabra2026aerr,
   author       = {Seabra, Art},
-  title        = {{{\AE}}rrTrinity: A Cost-of-Inquiry Law at Three Orders},
+  title        = {{{\AE}}rrTrinity: A Three-Order Framework for the Cost of Inquiry},
   year         = {2026},
-  month        = may,
-  version      = {v0.4},
-  doi          = {10.5281/zenodo.TBD},
+  month        = jun,
+  version      = {v0.5},
   url          = {https://github.com/artseabra/aerr-frame},
-  note         = {Preprint}
+  note         = {Preprint / protocol draft}
 }
 ```
 
 Plain text:
 
-> Seabra, A. (2026). *ÆrrTrinity: A Cost-of-Inquiry Law at Three Orders* (v0.4) [Preprint]. Ifthis Research. https://github.com/artseabra/aerr-frame.
+> Seabra, A. (2026). *ÆrrTrinity: A Three-Order Framework for the Cost of Inquiry* (v0.5) [Preprint / protocol draft]. Ifthis Research. https://github.com/artseabra/aerr-frame.
 
 ---
 

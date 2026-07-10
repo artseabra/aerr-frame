@@ -27,10 +27,18 @@ Commit [`619d2298c070254c20af0e29eb7b2294c45f3256`](https://github.com/artseabra
 
 Hashes below record the ÆrrFrame public state reviewed on `2026-07-09`.
 
-| Manuscript | Public path | SHA-256 |
-| --- | --- | --- |
-| The Interrogation Collapse | `papers/ic-cs/the-interrogation-collapse/the-interrogation-collapse.md` | `353a83926552431395e6b9c1239b9a886122a96bdb545c7d77144c52bd757973` |
-| The Chaos Nexus of Self | `papers/ic-cs/the-chaos-nexus-of-self/the-chaos-nexus-of-self.md` | `06b35463830b5b567d572f87e24b1b80dc35285d1d1dfa4a5463e22839324672` |
+| Work | Format | Public path | SHA-256 |
+| --- | --- | --- | --- |
+| The Interrogation Collapse | Markdown | `papers/ic-cs/the-interrogation-collapse/the-interrogation-collapse.md` | `c723cb223e5cc8bb395ddd75845d61ab3a7b6a3fa36506a822e258bcba1958c7` |
+| The Interrogation Collapse | PDF | `papers/ic-cs/the-interrogation-collapse/the-interrogation-collapse.pdf` | `3087d90e34e9ae38cc74d950a9d733993f8a04ffc18459ab6c27bf81c7d2772f` |
+| The Chaos Nexus of Self | Markdown | `papers/ic-cs/the-chaos-nexus-of-self/the-chaos-nexus-of-self.md` | `4065a4f5909bced5741cf31383c4863742c4d8f52a27cd33a9304f7cb5386c80` |
+| The Chaos Nexus of Self | PDF | `papers/ic-cs/the-chaos-nexus-of-self/the-chaos-nexus-of-self.pdf` | `4c5051e58fcbbd0b78eb20c9015d7ebd642a3c23ffeedd65f4d8e0b25e5e9b6e` |
+
+## Edition Boundary
+
+The archived IC|CS repository retains a longer April v2 of [The Interrogation Collapse](https://github.com/artseabra/ic-cs/blob/main/The%20Interrogation%20Collapse/the-interrogation-collapse.md), including its Appendix D validation note. The private vault manuscript was edited later and is the declared source of truth; the current public manuscript and PDF mirror that later vault edition and add the May 16 ÆrrTrinity cross-references.
+
+The current public edition is therefore the same research line, but it is not byte-for-byte identical to the preserved April PDF edition. Both histories remain addressable; they have not been silently blended.
 
 ## Preservation Boundary
 

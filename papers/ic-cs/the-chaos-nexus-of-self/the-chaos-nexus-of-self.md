@@ -1,10 +1,16 @@
+# The Chaos Nexus of Self
+
 ## Identity as Strange Attractor in Probabilistic Phase Space
-**Art Seabra**
-*ifthis|studio*
-Philadelphia, PA
+
+**Art Seabra**\
+*ifthis|studio*\
+Philadelphia, PA\
 artsea@ifth.is
 
-*Status: Open Research, Work in Progress.*
+**Status:** Open research / working paper\
+**First public date:** 2026-04-09\
+**License:** [CC BY 4.0](../../../LICENSE)\
+**Canonical repo:** [github.com/artseabra/aerr-frame](https://github.com/artseabra/aerr-frame)
 
 ---
 
