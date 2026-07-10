@@ -11,6 +11,7 @@ IC⏐CS is the historical two-paper atom inside ÆrrFrame. The canonical public 
 - Commit timestamp: `2026-04-08T23:27:40-04:00` (`2026-04-09T03:27:40Z`).
 - Commit subject: `Initial commit: IC⏐CS — The Interrogation Collapse and The Chaos Nexus of Self (v1)`.
 - Git tree: `4be89fa708dc5e7dbdd480a81617f3b7ee81b2e8`.
+- Git author: `art.seabra`; the commit message also carries a `Co-Authored-By: Oz` trailer. The original README and manuscripts identify Art Seabra as the paper author and retain the AI collaboration disclosure.
 - The initial tree contains the complete Interrogation Collapse manuscript, the Chaos Nexus component files, and a README naming both papers and Art Seabra as author.
 
 ## Paired-Manuscript Checkpoint
