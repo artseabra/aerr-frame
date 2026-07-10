@@ -32,6 +32,8 @@ In lineage order:
 
 The IC|CS atom remains addressable under [`papers/ic-cs/`](papers/ic-cs/). It is preserved as one atom inside the broader ÆrrFrame umbrella.
 
+Its original public authorship and timestamp record is documented in [`papers/ic-cs/PROVENANCE.md`](papers/ic-cs/PROVENANCE.md).
+
 ## Empirical instances
 
 Constructive instances of the Surrogate Existence Postulate across behavioral, explanatory, and geometric substrates:
